@@ -31,7 +31,8 @@ router.post('/orders', async (req, res) => {
             email: req.body.customer.email,
             phone: req.body.customer.phone,
             address: req.body.customer.address,
-        }
+        },
+        totalPrice: req.body.totalPrice
     })
 
     try {

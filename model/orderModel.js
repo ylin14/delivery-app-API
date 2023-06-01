@@ -19,9 +19,12 @@ const orderSchema = new mongoose.Schema({
         address: {
             required: true,
             type: String
-        }
+        },
+    },
+    totalPrice: {
+        required: true,
+        type: Number
     }
-
 })
 
 module.exports = mongoose.model('orderData', orderSchema)
